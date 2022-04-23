@@ -38,7 +38,8 @@ function calc() {
             result = value1 * Number(inputed);
             break;
         case "div":
-            result = (value1 / Number(inputed)).toFixed(3);
+            result = value1 / Number(inputed);
+            result = parseFloat(result).toFixed(4);
             break;
         default:
             result = value1 + Number(inputed);
